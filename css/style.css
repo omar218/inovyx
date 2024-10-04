@@ -2,14 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
     color: white;
     padding: 5px 0;
     text-align: right;
+}
+
+.about
+{
+    text-align: center;
+    margin-top: 200px;
+    min-height: 500px;
 }
 
 h1{
