@@ -14,7 +14,6 @@ header {
 {
     text-align: center;
     margin-top: 200px;
-    min-height: 500px;
 }
 
 h1{
@@ -66,11 +65,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
 
 form {
     justify-content: center;
@@ -107,4 +101,23 @@ footer {
     bottom: 0;
 }
 
-.text-brut{}
+.text-brut{
+    justify-content: center;
+    text-align: center;
+}
+
+#textincarousel {
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#textSome {
+    margin-top: 1000px ;
+    justify-content: center;
+
+}
+
+#about{
+    position: relative;
+    margin-bottom: 1500px;
+}
