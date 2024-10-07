@@ -13,3 +13,14 @@ document.querySelector('form').addEventListener('submit', function(event) {
 });
 
 
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('nav'); // Sélectionne le nav
+    const carouselHeight = document.getElementById('carouselExampleSlidesOnly').offsetHeight; // Hauteur du carousel
+
+    if (window.scrollY > carouselHeight) {
+        header.classList.add('header-scrolled'); // Ajoute la classe si défilement est au-delà de l'image
+    } else {
+        header.classList.remove('header-scrolled'); // Retire la classe sinon
+    }
+});
+

@@ -8,13 +8,136 @@ header {
     color: white;
     padding: 5px 0;
     text-align: right;
+    background-color: transparent !important;
 }
+
+.header-scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Couleur noire avec transparence */
+    transition: background-color 0.3s ease; /* Transition pour un effet doux */
+}
+
+.carousels
+{
+    margin-top: 150px;
+}
+
+
+/* From Uiverse.io by satyamchaudharydev */ 
+.btn {
+    --primary-color: bleu;
+    --secondary-color: rgb(233, 22, 15);
+    --hover-color: rgb(92, 92, 253);
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  .btn .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .btn .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .btn:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .btn:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .btn:hover .arrow:before {
+    right: 0;
+  }
+
+
+  /* From Uiverse.io by lenfear23 */ 
+.btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border-radius: 30px;
+    border: 1px solid #8F9092;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+    text-shadow: 0 1px #fff;
+    display: block; /* Transforme le bouton en bloc */
+    margin: 0 auto; /* Centre horizontalement */
+  }
+  
+.btn-2:hover {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+  }
+  
+.btn-2:active {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  }
+  
+  .btn-2:focus {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  }
+  
+  
+  
+
+  .card-c
+  {
+      width: 100%;
+      height: 200px;
+      background: turquoise;
+  }
 
 h3{
     margin: 50px;
     color: black;
 }
 
+.flou {
+    filter: blur(10px); /* Ajustez la valeur du flou selon vos besoins */
+    height: 650px;
+}
+ 
 .service {
     flex-direction: row;
 }
@@ -43,13 +166,11 @@ h1{
     padding: 5px;
     font-size: 22px;
     justify-content: center;
-    color: blue;
 }
 
 h2 {
     font-size: 24px;
     font-weight: bold;
-    color: blue;
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
@@ -122,11 +243,12 @@ footer {
 #textincarousel {
     justify-content: center;
     text-transform: uppercase;
+    font-size: 15px;
 }
 
-#textSome {
-    margin-top: 1000px ;
+.textSome {
     justify-content: center;
+    font-size: 4rem;
 
 }
 
