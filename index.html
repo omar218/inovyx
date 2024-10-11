@@ -8,27 +8,32 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/test.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 </head>
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent;">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container-fluid">
-              <a class="navbar-brand" href="#">INOVYX TECH</a>
+              <a class="navbar-brand px-2" href="#">
+                <img src="assets/logo_inovyx.png" alt="" style="width: 130px;">
+              </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse my-3" id="navbarSupportedContent" style="margin-left: 24%;">
+              <div class="collapse navbar-collapse my-3" id="navbarSupportedContent" style="margin-left: 28%;">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="nav-link text-white" href="about.html">A propos</a>
+                      <li class="nav-item nav-col">
+                          <a class="nav-link" href="about.html" style="color: #2eadff;"><strong> A propos </strong></a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link text-white" href="#">Expertise</a>
+                          <a class="nav-link" href="#" style="color: #2eadff;"><strong> Expertise</strong></a>
                       </li>
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Services
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #2eadff;">
+                              <strong>Services</strong>
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                               <li><a class="dropdown-item" href="#">Gestion de fil d'attentes</a></li>
@@ -38,7 +43,7 @@
                           </ul>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link text-white" href="contact.html" tabindex="-1" aria-disabled="true">Contacts</a>
+                          <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true" style="color: #2eadff;"><strong>Contacts</strong></a>
                       </li>
                   </ul>
                   <form class="d-flex ms-auto">
@@ -54,29 +59,20 @@
       </nav>
   </header>
   
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="margin-top: 80px;">
       <div class="carousel-inner">
           <div class="carousel-item active position-relative">
-              <div class="flou">
+              <!--<div class="flou">
                   <img src="./assets/inovyx1.jpg" class="d-block w-100" alt="...">
-              </div>
+              </div>-->
+              <div class="flou" style="background: linear-gradient(to right, #2eadff, #e4405f);">
+                <!-- Removed the img tag -->
+            </div>
               <div class="carousel-caption d-none d-md-block" style="margin-bottom: 10%;">
-                  <h1 id="text-brut" class="textSome">QUI SOMMES NOUS</h1>
-                  <p id="textincarousel" class="my-5">
-                    INOVYX TECH est une société informatique
-                    de droit ivoirien spécialisée dans la
-                    réalisation de projets
-                    technologiques innovateurs. Elle existe
-                    depuis début 2019 et depuis lors ne cesse de
-                    proposer de solutions innovantes à toute sa
-                    clientèle.
-                    Nous sommes le premier fournisseur de
-                    dispositifs tactile multi-usages Made In Cote
-                    d’Ivoire
-                    Elle conçoit et commercialise des solutions
-                    informatiques à usage publique et privé.
-                  </p>
-                  <button class="btn-2 button-container">Nous contacter</button>
+                  <h1 id="text-brut" class="textSome playfair-display">                   
+                    Inovyx Tech est une solution complète pour les entreprises qui cherchent à améliorer leur présence numérique et à rationaliser leurs opérations.
+                  </h1>
+                  <button class="btn-2 button-container my-3">Nous contacter</button>
               </div>
           </div>
           <div class="carousel-item position-relative">
@@ -90,23 +86,36 @@
   
 
   <section id ="services" class="my-5"> 
-    <div class="row rw">  
-      <div class="col-6">
-        <img class="img2" style= "width: 450px; height :510px" src="./assets/inovyx5.jpg" />
-      </div>
-      <div class="col-6">
-        <h1>Tout savoir</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis alias delectus, amet tempora aspernatur ipsam qui, eaque fuga laborum officiis exercitationem fugiat! A hic eaque autem aperiam ut expedita.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa incidunt voluptate porro iure eaque est veritatis quia neque molestiae, earum aperiam magni excepturi inventore. Doloremque cumque hic nulla. Beatae, natus?
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum deserunt quisquam.
-        </p>
+    <div class="container-fluid">
+      <h1 id="text-brut" class="playfair-display txtsom">
+        Leader de la billetterie événementielle
+        <hr class="brd-h">
+      </h1>
+      <div class="row rw">  
+        <div class="col-6">
+          <img class="img2" style= "width: 450px; height :510px;border-radius: 15px;" src="./assets/borne digitale.jpeg" />
+        </div>
+        <div class="col-6 my-4 shadow-lg rounded-border">
+          <h1 class="colr playfair-display">Tout savoir</h1>
+          <p>
+            INOVYX TECH est une société informatique
+            de droit ivoirien spécialisée dans la
+            réalisation de projets
+            technologiques innovateurs. Elle existe
+            depuis début 2019 et depuis lors ne cesse de
+            proposer de solutions innovantes à toute sa
+            clientèle.
+            Nous sommes le premier fournisseur de
+            dispositifs tactile multi-usages Made In Cote
+            d’Ivoire
+            Elle conçoit et commercialise des solutions
+            informatiques à usage publique et privé.
+          </p>
+  
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa incidunt voluptate porro iure eaque est veritatis quia neque molestiae, earum aperiam magni excepturi inventore. Doloremque cumque hic nulla. Beatae, natus?
+          </p>
+        </div>
       </div>
     </div>
     
@@ -142,10 +151,29 @@
   </section>
 
   <section id="nosolutions">
-    <h2>Ceux qui nous font confiances</h2>   
     <!--  Section: Fun fact  -->
     <div class="card-c">
+      <div class="row">
+        <div class="col-3 text-white py-5">
+          <p><strong> +50 </strong></p>
+          <p><strong>Utilisateurs</strong></p>
+        </div>
 
+        <div class="col-3 text-white py-5">
+          <p><strong> +50 </strong></p>
+          <p><strong>Utilisateurs</strong></p>
+        </div>
+
+        <div class="col-3 text-white py-5">
+          <p><strong> +50 </strong></p>
+          <p><strong>Utilisateurs</strong></p>
+        </div>
+
+        <div class="col-3 text-white py-5">
+          <p><strong> +50 </strong></p>
+          <p><strong>Utilisateurs</strong></p>
+        </div>
+      </div>
     </div>
   <!--  Section: Services  --> 
   </section>
@@ -153,43 +181,45 @@
   
     <section id = "solutions"> 
     
-      <div class="row rw">
-       <div class="card mx-4" style="width: 18rem;">
-         <img src="" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">Voir</h5>
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="container-fluid shadow-lg py-5">
+        <div class="row rw">
+          <div class="card mx-4 shadow-lg" style="width: 18rem;">
+            <img src="assets/img1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Voir</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    
+          <div class="card shadow-lg" style="width: 18rem;">
+            <img src="assets/img2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    
+          <div class="card mx-4 shadow-lg" style="width: 18rem;">
+            <img src="assets/img3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+    
          </div>
-       </div>
- 
-       <div class="card" style="width: 18rem;">
-         <img src="..." class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">Card title</h5>
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           <a href="#" class="btn btn-primary">Go somewhere</a>
-         </div>
-       </div>
- 
-       <div class="card mx-4" style="width: 18rem;">
-         <img src="..." class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">Card title</h5>
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           <a href="#" class="btn btn-primary">Go somewhere</a>
-         </div>
- 
+        </div>
       </div>
-     </div>
     </section>
 
     <section>
-      <div class="container">
+      <div class="container py-3">
         <div class="row">
           <div class="col-12">
-            <h1>NOS SERVICES ET SOLUTIONS</h1>
-            <p>Specialisée essentiellement dans les services digitaux et outilsde facilitation de la transformation digitale</p>
+            <h1 class="colr playfair-display">NOS SERVICES ET SOLUTIONS</h1>
+            <p class="p-col">Specialisée essentiellement dans les services digitaux et outilsde facilitation de la transformation digitale</p>
           </div>
         </div>
         <div class="row my-5">
@@ -202,7 +232,7 @@
               <div class="notification">
                 <div class="notiglow"></div>
                 <div class="notiborderglow"></div>
-                <div class="notititle">
+                <div class="notititle playfair-display">
                   <h1>
                     INOVYX FEEDBACK
                   </h1>
@@ -240,6 +270,17 @@
                       </li>
                    </ul>
                   </p>
+                  <button class="button">
+                    Voir +
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                      <path
+                        clip-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+
                 </div>
               </div>
             </div>
@@ -250,7 +291,7 @@
             <div class="notification">
               <div class="notiglow"></div>
               <div class="notiborderglow"></div>
-              <div class="notititle">
+              <div class="notititle playfair-display">
                 <h1>
                   INOVYX FEEDBACK
                 </h1>
@@ -288,6 +329,16 @@
                     </li>
                  </ul>
                 </p>
+                <button class="button">
+                  Voir +
+                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path
+                      clip-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -308,7 +359,7 @@
             <div class="notification">
               <div class="notiglow"></div>
               <div class="notiborderglow"></div>
-              <div class="notititle">
+              <div class="notititle playfair-display">
                 <h1>
                   INOVYX INVENTORY
                 </h1>
@@ -338,6 +389,16 @@
                       Etc...
                     </li>
                  </ul>
+                 <button class="button">
+                  Voir +
+                  <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path
+                      clip-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
                 </p>
               </div>
             </div>
@@ -349,7 +410,7 @@
           <div class="notification">
             <div class="notiglow"></div>
             <div class="notiborderglow"></div>
-            <div class="notititle">
+            <div class="notititle playfair-display">
               <h1>
                 INOVYX FEEDBACK
               </h1>
@@ -386,6 +447,16 @@
                     Edition de questionnaire de satisfaction
                   </li>
                </ul>
+               <button class="button">
+                Voir +
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
               </p>
             </div>
           </div>
@@ -443,11 +514,109 @@
       </div>
     </section>-->
 
-    <section id = "nospartenaires">
-      <h2>Nos partenaires</h2>
-      <p>Leader des solutions digitales pour bornes digitales </p>
-      <p>Nous vous accompagnons pour tous vos besoins en dispositif tactiles</p>
-      <p>Liste de ceux que nous accompagnons</p>
+    <section id = "nospartenaires" class="shadow-lg">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="colr playfair-display">Nos partenaires</h2>
+          <p>Nous sommes fiers de collaborer avec des leaders de l'innovation digitale.<br>
+            Grâce à leur expertise, nous offrons des solutions de qualité pour vos bornes tactiles.<br>
+            Ensemble, nous transformons vos idées en expériences interactives, adaptées à vos besoins spécifiques.
+          </p>
+          <div class="row justify-content-center my-3">
+            <div class="col-4 text-center my-3">
+              <img src="assets/archipel.png" alt="" style="width: 150px;">
+            </div>
+
+            <div class="col-4 text-center my-3">
+              <img src="assets/archipel.png" alt="" style="width: 150px;">
+            </div>
+
+            <div class="col-4 text-center my-3">
+              <img src="assets/archipel.png" alt="" style="width: 150px;">
+            </div>
+          </div>
+
+          <div class="row justify-content-center my-3">
+            <div class="col-4 text-center my-3">
+              <img src="assets/archipel.png" alt="" style="width: 150px;">
+            </div>
+
+            <div class="col-4 text-center my-3">
+              <img src="assets/archipel.png" alt="" style="width: 150px;">
+            </div>
+
+            <div class="col-4 text-center my-3">
+              <img src="assets/archipel.png" alt="" style="width: 150px;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id = "nospartenaires">
+      <h2 class="colr playfair-display">Ils nous ont fait confiance...</h2>
+      <p>Leader des solutions digitales pour bornes digitales<br>
+        Nous vous accompagnons pour tous vos besoins en dispositif tactiles.
+      </p>
+
+      <div class="row justify-content-center my-3">
+        <div class="col-4 text-center my-3">
+          <img src="assets/ministere de la fonction publique.png" alt="" style="width: 150px;">
+        </div>
+
+        <div class="col-4 text-center my-3">
+          <img src="assets/ministere de la fonction publique.png" alt="" style="width: 150px;">
+        </div>
+
+        <div class="col-4 text-center my-3">
+          <img src="assets/ministere de la fonction publique.png" alt="" style="width: 150px;">
+        </div>
+      </div>
+
+      <div class="row justify-content-center my-3">
+        <div class="col-4 text-center my-3">
+          <img src="assets/ministere de la fonction publique.png" alt="" style="width: 150px;">
+        </div>
+
+        <div class="col-4 text-center my-3">
+          <img src="assets/ministere de la fonction publique.png" alt="" style="width: 150px;">
+        </div>
+
+        <div class="col-4 text-center my-3">
+          <img src="assets/ministere de la fonction publique.png" alt="" style="width: 150px;">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="form-container">
+                <div class="form">
+                    <span class="heading">Nous contacter</span>
+                    <div class="row">
+                      <div class="col-6">
+                        <input placeholder="Nom" type="text" class="input">
+                        <input placeholder="E-mail" id="mail" type="email" class="input">
+                      </div>
+
+                      <div class="col-6">
+                        <input placeholder="Prénoms" type="text" class="input">
+                        <input placeholder="N° de téléphone" id="mail" type="email" class="input">
+                      </div>
+                    </div>
+                    <textarea placeholder="Laissez un message" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                    <div class="button-container">
+                    <div class="send-button">Envoyer</div>
+                    <div class="reset-button-container">
+                        <div id="reset-btn" class="reset-button">Réinitialiser</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
   
