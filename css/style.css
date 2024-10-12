@@ -8,13 +8,176 @@ header {
     color: white;
     padding: 5px 0;
     text-align: right;
+    background-color: transparent !important;
 }
+
+.header-scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Couleur noire avec transparence */
+    transition: background-color 0.3s ease; /* Transition pour un effet doux */
+}
+
+.nav-link {
+    color: red; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    position: relative; /* Nécessaire pour la bordure */
+}
+
+.nav-link:hover::after {
+    content: ''; /* Nécessaire pour créer un élément */
+    display: block; /* Rend l'élément visible */
+    width: 100%; /* Prend toute la largeur du lien */
+    height: 2px; /* Épaisseur de la bordure */
+    background-color: red; /* Couleur de la bordure */
+    position: absolute; /* Positionne la bordure */
+    left: 0; /* Aligne à gauche */
+    bottom: -5px; /* Espacement en dessous du texte */
+}
+
+
+.carousels
+{
+    margin-top: 150px;
+}
+
+.abel-regular {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+
+/* From Uiverse.io by satyamchaudharydev */ 
+.btn {
+    --primary-color: bleu;
+    --secondary-color: rgb(233, 22, 15);
+    --hover-color: rgb(92, 92, 253);
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  .btn .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .btn .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .btn:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .btn:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .btn:hover .arrow:before {
+    right: 0;
+  }
+
+
+  /* From Uiverse.io by lenfear23 */ 
+.btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border-radius: 30px;
+    border: 1px solid #8F9092;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+    text-shadow: 0 1px #fff;
+    display: block; /* Transforme le bouton en bloc */
+    margin: 0 auto; /* Centre horizontalement */
+  }
+  
+.btn-2:hover {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+  }
+  
+.btn-2:active {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  }
+  
+  .btn-2:focus {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  }
+  
+  
+  
+
+  .card-c
+  {
+      width: 100%;
+      height: 200px;
+      background: #e4405f;
+  }
+
+  h2.colr
+  {
+      color: #e4405f;
+  }
+
+  h1.colr
+  {
+      color: #e4405f;
+  }
 
 h3{
     margin: 50px;
     color: black;
 }
 
+.flou {
+    filter: blur(10px); /* Ajustez la valeur du flou selon vos besoins */
+    height: 650px;
+}
+ 
 .service {
     flex-direction: row;
 }
@@ -24,10 +187,16 @@ h3{
     height: 150px;
 }
 
+.rounded-border {
+  border: 2px solid white;
+  border-radius: 10px; /* Adjust the radius for more or less rounding */
+  padding: 10px;
+}
 
-.row{
+
+.rw{
     flex-direction: row;
-    margin: 150px;
+    margin:10px 150px;
     justify-content: center;
     border-width: 2px;
 }
@@ -42,13 +211,11 @@ h1{
     text-align: center;
     font-size: 22px;
     justify-content: center;
-    color: blue;
 }
 
 h2 {
     font-size: 24px;
     font-weight: bold;
-    color: blue;
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
@@ -56,14 +223,34 @@ h2 {
 
 }
 
-button {
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: brown;
-    width: 300px;
-    height: 50px;
-    border-radius: 30px; 
+
+.serv
+{
+    width: 50px;
+    height: auto;
+}
+
+.text-deco
+{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.text-decos
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.text-deco li {
+    margin-right: 20px;
+    text-align: left;
+}
+
+li.align
+{
+    margin-right: 20px;
 }
 
 
@@ -136,13 +323,29 @@ footer {
 #textincarousel {
     justify-content: center;
     text-transform: uppercase;
+    font-size: 15px;
 }
 
-#textSome {
-    margin-top: 1000px ;
+.textSome {
     justify-content: center;
+    font-size: 3.5rem;
 
 }
+
+.txtsom
+{
+  justify-content: center;
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+.brd-h {
+  border-bottom: 3px solid red;
+  width: 150px;
+  margin-left: 0; /* Align to the left */
+}
+
+
 
 #about{
     position: relative;
@@ -164,6 +367,12 @@ p{
     
 }
 
+.p-col
+{
+    background: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+-webkit-background-clip: text; /* Pour les navigateurs basés sur WebKit */
+color: transparent; /* Rend le texte transparent pour voir le dégradé */
+}
 ul{
     justify-content: center;
     text-align: center;
@@ -174,3 +383,401 @@ li{
     font-size: 20px;
     font-weight: 500;
 }
+
+.foot
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.newsltter
+{
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: red;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+  
+
+  /* From Uiverse.io by SouravBandyopadhyay */ 
+.notification {
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+    position: relative;
+    width: 40rem;
+    height: 37rem;
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+    --color: #32a6ff
+  }
+  
+  .notification:before {
+    position: absolute;
+    content: "";
+    inset: 0.0625rem;
+    border-radius: 0.9375rem;
+    background: #fff;
+    z-index: 2
+  }
+  
+  .notification:after {
+    position: absolute;
+    content: "";
+    width: 0.25rem;
+    inset: 0.65rem auto 0.65rem 0.5rem;
+    border-radius: 0.125rem;
+    background: var(--gradient);
+    transition: transform 300ms ease;
+    z-index: 4;
+  }
+  
+  .notification:hover:after {
+    transform: translateX(0.15rem)
+  }
+  
+  .notititle {
+    color: var(--color);
+    padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+  }
+  
+  .notification:hover .notititle {
+    transform: translateX(0.15rem)
+  }
+  
+  .notibody {
+    color: #99999d;
+    padding: 0 1.25rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+  }
+  
+  .notification:hover .notibody {
+    transform: translateX(0.25rem)
+  }
+  
+  .notiglow,
+  .notiborderglow {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle closest-side at center, white, transparent);
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  
+  .notiglow {
+    z-index: 3;
+  }
+  
+  .notiborderglow {
+    z-index: 1;
+  }
+  
+  .notification:hover .notiglow {
+    opacity: 0.1
+  }
+  
+  .notification:hover .notiborderglow {
+    opacity: 0.1
+  }
+  
+  .note {
+    color: var(--color);
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.9rem;
+    width: 75%;
+  }
+
+  .adr li
+  {
+    font-size: 15px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    text-align: left; /* Aligne le texte à gauche */
+  }
+
+
+  /* From Uiverse.io by Smit-Prajapati */ 
+.orange {
+    color: #e4405f;
+  }
+  
+  .form-container {
+    max-width: 1500px;
+    margin: 30px;
+    background-color: rgb(54, 53, 53);
+    padding: 30px;
+    border-left: 5px solid #e4405f;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  }
+  
+  .heading {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .form-container .form .input {
+    color: #87a4b6;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid transparent;
+  }
+  
+  .form-container .form .input:focus {
+    border-left: 5px solid #e4405f;
+  }
+  
+  .form-container .form .textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #e4405f;
+    font-weight: bold;
+    resize: none;
+    max-height: 150px;
+    margin-bottom: 20px;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .textarea:focus {
+    border-left: 5px solid #e4405f;
+  }
+  
+  .form-container .form .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-container .form .button-container .send-button {
+    flex-basis: 70%;
+    background: #e4405f;
+    padding: 10px;
+    color: #001925;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .button-container .send-button:hover {
+    background: transparent;
+    border: 1px solid #e4405f;
+    color: #e4405f;
+  }
+  
+  .form-container .form .button-container .reset-button-container {
+    filter: drop-shadow(1px 1px 0px #e4405f);
+    flex-basis: 30%;
+  }
+  
+  .form-container .form .button-container .reset-button-container .reset-button {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: #e4405f;
+    font-weight: bold;
+    background: #001925;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-container .form .button-container .reset-button-container .reset-button:hover {
+    background: #e4405f;
+    color: #001925;
+  }
+
+  .card-img-top
+  {
+      height: 220px;
+  }
+
+  /* From Uiverse.io by adeladel522 */ 
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 250px;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
